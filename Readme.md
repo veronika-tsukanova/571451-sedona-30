@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Вероника Цуканова](https://up.htmlacademy.ru/htmlcss/30/user/571451).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Панасюк](https://htmlacademy.ru/profile/sasha_oldsport).
 
 ---
 

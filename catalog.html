@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+  <header>
+    <nav>
+      <a>
+        <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
+      </a>
+      <ul>
+        <li><a href="blank.html">Информация</a></li>
+        <li><a href="blank.html">Фото и видео</a></li>
+        <li><a href="blank.html">Карта штата</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Фильтр товаров</h2>
+    <form method="get" action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+        <ul>
+          <li>
+            <label>Бассейн<input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+            </label>
+          </li>
+          <li>
+            <label>Парковка<input type="checkbox" name="parking" id="filter-parking">
+            </label>
+          </li>
+          <li>
+            <label>WI-FI<input type="checkbox" name="wi-fi" id="filter-wi-fi">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья:</legend>
+        <ul>
+            <li>
+              <label>Гостиница<input type="checkbox" name="hotel" id="filter-hotel" checked>
+              </label>
+            </li>
+            <li>
+              <label>Мотель<input type="checkbox" name="motel" id="filter-motel" checked>
+              </label>
+            </li>
+            <li>
+              <label>Апартаменты<input type="checkbox" name="apartments" id="filter-apartments" checked>
+              </label>
+            </li>
+          </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Стоимость в сутки (Р):</legend>
+        <label>От 0 до 3000<input type="range" min="0" max="3000" step="10" value="2500"> 
+      </label>
+      </fieldset>
+      <button type="submit">Показать</button>
+    </form>
+
+    <section>
+      <p>Найдено: 3</p>
+      <p>Сортировка: </p>
+      <ul>
+        <li>
+          <a>По цене</a>
+        </li>
+        <li>
+          <a href="#">По типу</a>
+        </li>
+        <li>
+          <a href="#">По рейтингу</a>
+        </li>
+      </ul>
+      <h2>Список гостиниц</h2>
+        <ul>
+          <li>
+            <a href="blank.html">
+              <h3>Amara Resort & Spa</h3>
+              <p>
+                <img src="img/Amara Resort & Spa.png" width="135" height="90" alt="Amara Resort & Spa">
+              </p>
+            </a>
+            <p>Гостиница</p>
+            <p>от 4000 Р.</p>
+            <button type="button">Подробнее</button>
+            <button type="button">Забронировать</button>
+          </li>
+          <li>
+            <a href="blank.html">
+              <h3>Desert Quail Inn</h3>
+              <p>
+                <img src="img/Desert Quail Inn.png" width="135" height="90" alt="Desert Quail Inn">
+              </p>
+            </a>
+            <p>Мотель</p>
+            <p>от 3000 Р.</p>
+            <button type="button">Подробнее</button>
+            <button type="button">Забронировать</button>
+          </li>
+          <li>
+            <a href="blank.html">
+              <h3>Villas at Poco Diablo</h3>
+              <p>
+                <img src="img/Villas at Poco Diablo.png" width="135" height="90" alt="Villas at Poco Diablo">
+              </p>
+            </a>
+            <p>Апартаменты</p>
+            <p>от 2000 Р.</p>
+            <button type="button">Подробнее</button>
+            <button type="button">Забронировать</button>
+          </li>
+         </ul>
+      </section>
+  </main>
+  
+  <footer>
+    <section>
+      <h2>Контакты</h2>
+      <a href="blank.html">#VISITSEDONA</a><br>
+      <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+    </section>
+    <section>
+      <h2>Соцсети</h2>
+      <ul>
+        <li>
+          <a href="#">Твиттер</a>
+        </li>
+        <li>
+          <a href="#">Фейсбук</a>
+        </li>
+        <li>
+          <a href="#">Ютуб</a>
+        </li>
+      </ul>
+    </section>
+    <p>Website by <a href="https://htmlacademy.ru">HTML Academy</a>
+    </p>
+  </footer>
+    
+  </body>
+</html>

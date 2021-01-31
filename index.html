@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+<html class="page" lang="ru">
 
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/icons/apple.png">
-    <link rel="manifest" href="manifest.webmanifest">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
 
-  </head>
-  <body>
-  <header>
-    <nav>
-      <a>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
         <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
       </a>
-      <ul>
+      <ul class="site-navigation">
         <li><a href="blank.html">Информация</a></li>
         <li><a href="blank.html">Фото и видео</a></li>
         <li><a href="blank.html">Карта штата</a></li>
@@ -25,52 +30,52 @@
     </nav>
   </header>
 
-  <main>
-    <h1>Путешествие в Седону</h1>
+  <main class="container">
+    <h1 class="page-title">Путешествие в Седону</h1>
     <img src="img/welcome.svg" width="457" height="351" alt="Добро пожаловать в Седону!">
-    <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-    <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-    
-    <section>
+    <p class="greeting-headline">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+    <p class="greeting">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+
+    <section class="features">
       <h2>Преимущества</h2>
-      <ul>
-        <li>
+      <ul class="features-list">
+        <li class="features-item blue-zone">
           <h3>Настоящий городок</h3>
           <p>-№1-</p>
           <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           <img src="img/wood_house.jpg" width="800" height="256" alt="Деревянный домик сбоку">
-        <ul>
-          <li>
-            <h3>Жилье</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
-          <li>
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li>
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
-          </li>
-        </ul>
+          <ul class="reasons">
+            <li class="reasons-item">
+              <h3>Жилье</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li class="reasons-item">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="reasons-item">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
         </li>
-        <li>
+        <li class="features-item blue-zone">
           <h3>Там есть Мост дьявола</h3>
           <p>-№2-</p>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           <img src="img/canyon.jpg" width="800" height="256" alt="Каньон">
         </li>
-        <li>
+        <li class="features-item gray-zone">
           <h3>Небольшая площадь</h3>
           <p>-№3-</p>
           <p>Все достопримечательности находятся очень близко</p>
         </li>
-        <li>
+        <li class="features-item gray-zone">
           <h3>Красивая дорога</h3>
           <p>-№4-</p>
           <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
         </li>
-        <li>
+        <li class="features-item gray-zone">
           <h3>Мало туристов</h3>
           <p>-№5-</p>
           <p>Большинство едет в гранд каньон и толпится там</p>
@@ -78,51 +83,84 @@
       </ul>
     </section>
 
-    <section>
-      <p>Заинтересовались?</p>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button type="submit">Поиск гостицы в седоне</button>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <label>Дата заезда: <input type="date" name="arrival-date"></label><br>
-        <label>Дата выезда: <input type="date" name="departure-date"></label><br>
-        <label>Взрослые: 
-          <button>-</button>
-          <input type="number" name="adult" min="1" value="2">
-          <button>+</button>
-        </label><br>
-        <label>Дети: 
-          <button>-</button>
-          <input type="number" name="children" min="0" value="0">
-          <button>+</button>
-        </label>
-        <button type="submit">Найти</button>
+    <section class="hotel-search">
+      <p class="search-headline">Заинтересовались?</p>
+      <p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+      </p>
+      <button class="button-hotel-search" type="submit">Поиск гостицы в седоне</button>
+      <form class="main-form" action="https://echo.htmlacademy.ru/courses" method="post">
+        <p class="search-item">
+          <label class="search-arrival-date">Дата заезда: <input class="icon-arrival-date" type="text"
+              name="arrival-date" placeholder="24 апреля 2017"></label>
+        </p>
+        <p class="search-item">
+          <label class="search-depature-date">Дата выезда: <input class="icon-depature-date" type="text"
+              name="departure-date" placeholder="4 июля 2017"></label>
+        </p>
+        <p class="search-item">
+          <label class="search-adult">Взрослые:
+            <button>-</button>
+            <input type="number" name="adult" min="1" value="2">
+            <button>+</button>
+          </label>
+        </p>
+        <p class="search-item">
+          <label class="search-children">Дети:
+            <button>-</button>
+            <input type="number" name="children" min="0" value="0">
+            <button>+</button>
+          </label>
+        </p>
+        <button class="button-search" type="submit">Найти</button>
       </form>
     </section>
   </main>
-  
-  <footer>
-    <section>
-      <h2>Контакты</h2>
-      <a href="blank.html">#VISITSEDONA</a><br>
-      <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
-    </section>
-    <section>
-      <h2>Соцсети</h2>
-      <ul>
-        <li>
-          <a href="#">Твиттер</a>
-        </li>
-        <li>
-          <a href="#">Фейсбук</a>
-        </li>
-        <li>
-          <a href="#">Ютуб</a>
-        </li>
-      </ul>
-    </section>
-    <p>Website by <a href="https://htmlacademy.ru">HTML Academy</a>
-    </p>
+
+  <footer class="main-footer">
+    <div class="container">
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <a class="footer-contacts" href="blank.html">#VISITSEDONA</a><br>
+        <a class="footer-contacts" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+      </section>
+      <section class="footer-social">
+        <h2>Соцсети</h2>
+        <ul>
+          <li>
+            <a class="social-button" href="#">
+              <span>Твиттер</span>
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <span>Фейсбук</span>
+              <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <span>Ютуб</span>
+              <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <p class="footer-copyright">Website by <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+    </div>
   </footer>
-    
-  </body>
+
+</body>
+
 </html>

@@ -61,8 +61,6 @@ img {
 }
 
 .main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
@@ -280,7 +278,7 @@ grid-column: 1/-1;
   color: var(--basic-black);
 }
 
-.main-footer .container {
+.main-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }

@@ -60,13 +60,6 @@ img {
   background-color: var(--special-dark-gray);
 }
 
-.main-navigation-wrapper {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
-
-}
-
 .main-navigation {
   display: grid;
   font-size: 14px;

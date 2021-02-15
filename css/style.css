@@ -42,7 +42,6 @@
 }
 
 .main-header {
-  margin-bottom: 50px;
   background-color: var(--basic-white);
   }
 
@@ -77,10 +76,6 @@ img {
   overflow: hidden;
 }
 
-.main-header-bar {
-  background-color: var(--special-dark-gray);
-}
-
 .main-navigation {
   display: grid;
   font-size: 14px;
@@ -100,16 +95,17 @@ img {
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.left-navigation {
-  display: flex;
-  justify-content: left;
+.navigation li {
+  display:flex;
+  justify-content: space-between;
 }
 
-.right-navigation {
-  display: flex;
-  justify-content: right;
+.navigation li:nth-of-type(2) {
+  padding-right: 200px;
 }
 
 .navigation a {
@@ -131,15 +127,6 @@ img {
   color: var(--brown)
 }
 
-.background {
-background-image: url("../img/background-photo.jpg");
-background-repeat: no-repeat;
-background-position: center;
-padding-top: 60px;
-padding-bottom: 60px;
-margin-top: -40px;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -147,7 +134,17 @@ margin-top: -40px;
   background-color: var(--basic-white);
 }
 
-.greeting {
+.greeting-background {
+  text-align: center;
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-top: -40px;
+}
+
+.greeting-message {
   text-align: center;
 }
 
@@ -178,8 +175,14 @@ margin-top: -40px;
 
 .first {
 grid-column: 1/-1;
-display: flex;
-flex-wrap: wrap;
+}
+
+.first-feature{
+  display: flex;
+}
+
+.first-feature img {
+  order: 1;
 }
 
 .second {
@@ -264,7 +267,6 @@ flex-wrap: wrap;
   text-transform: uppercase;
   background-color: var(--brown);
   border: none;
-  /*padding: 20px 130px;*/
   width: 500px;
   height: 70px;
 }
@@ -281,7 +283,8 @@ flex-wrap: wrap;
 .search-form-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 
@@ -290,10 +293,6 @@ flex-wrap: wrap;
   font-size: 14px;
   line-height: 26px;
   background-color: var(--basic-white);
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .search-item input {
@@ -304,6 +303,7 @@ flex-wrap: wrap;
   padding-right: 20px;
   padding-bottom: 3px;
   padding-left: 40px;
+
 }
 
 .search-item input:hover {
@@ -447,6 +447,7 @@ flex-wrap: wrap;
 .filter {
   display:grid;
   grid-template-columns: 1fr 1fr 2fr;
+  padding-top: 30px;
 }
 
 .filter fieldset {
@@ -502,6 +503,95 @@ flex-wrap: wrap;
 .filter ul {
   list-style: none;
   line-height: 21px;
+}
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 10px;
+}
+
+.filter-item legend {
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 29px;
+  padding-top: 26px;
+  border: 2px solid white;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #FFFFFF;
+  opacity: 0.3;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  padding: 0;
+  border: 6px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*.price-controls label {
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: #ffffff;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: transparent;
+}*/
+
+.range-controls .toggle-min {
+  left: 0px;
+}
+
+.range-controls .toggle-max {
+  left: 200px;
+}
+
+.price-controls {
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: #ffffff;
+  border: 2px solid white;
+  border-radius: 5px;
 }
 
 .sort {

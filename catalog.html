@@ -23,14 +23,10 @@
       </a>
       <div class="main-header-bar">
         <ul class="navigation">
-          <div class="left-navigation">
             <li class="navigation-item"><a href="blank.html">Информация</a></li>
             <li class="navigation-item"><a href="blank.html">Фото и видео</a></li>
-          </div>
-          <div class="right-navigation">
             <li class="navigation-item"><a href="blank.html">Карта штата</a></li>
             <li class="navigation-item-current"><a>Гостиницы</a></li>
-          </div>
         </ul>
       </div>
     </nav>
@@ -75,11 +71,25 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-item">
           <legend>Стоимость в сутки (Р):</legend>
-          <label>От 0 до 3000<input class="filter-input-range filter-input" type="range" min="0" max="3000" step="10"
-              value="2500">
-          </label>
+          <div class="price-controls">
+            <span>
+              от 0
+            </span>
+            <span>
+              до 3000
+            </span>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+            </div>
+          </div>
+          </div>
         </fieldset>
         <button class="filter-button button" type="submit">Показать</button>
       </form>
